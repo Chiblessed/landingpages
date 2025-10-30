@@ -1,13 +1,35 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Russo_One,
+  Open_Sans,
+  Sankofa_Display,
+  Saira,
+  Tomorrow,
+} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin"],
+});
+const sankorika = Sankofa_Display({
+  variable: "--font-sankorika",
+  weight: ["400"],
+  subsets: ["latin"],
+});
+const tomorrow = Tomorrow({
+  variable: "--font-tomorrow",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const saira = Saira({
+  variable: "--font-sanira",
+  subsets: ["latin"],
+});
+
+const russoOne = Russo_One({
+  variable: "--font-russo-one",
+  weight: ["400"],
   subsets: ["latin"],
 });
 
@@ -20,7 +42,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${openSans.variable} ${tomorrow.variable} ${russoOne.variable} ${sankorika.variable}  ${saira.variable}  antialiased`}
       >
         {children}
       </body>
