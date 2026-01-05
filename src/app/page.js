@@ -89,10 +89,16 @@ export default function Home() {
       link: "/BrandDesigner",
       color: "#c9f23d", // green
     },
+    {
+      src: BrandDesigner,
+      title: "Real Estate",
+      link: "/RealEstate",
+      color: "#c6a667", // gree
+    },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-[15vh] py-20 max-sm:px-3">
+    <div className="flex flex-col items-center justify-center space-y-[5vh] py-20 max-sm:px-3">
       {sections.map((item, i) => (
         <div
           key={i}
