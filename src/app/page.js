@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Cloudhub from "@/../../public/cloudhub.png";
 import BrandDesigner from "@/../../public/branddesigner.png";
+import RealEstate from "@/../../public/Real Estate Images/Image1.png";
 
 export default function Home() {
   const sectionsRef = useRef([]);
@@ -90,10 +91,10 @@ export default function Home() {
       color: "#c9f23d", // green
     },
     {
-      src: BrandDesigner,
+      src: RealEstate,
       title: "Real Estate",
       link: "/RealEstate",
-      color: "#c6a667", // gree
+      color: "#c6a667", // gold
     },
   ];
 
